@@ -1,6 +1,13 @@
 <?xml version="1.0" ?>
 <robot name="p73_walker" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
+<material name="silver">
+  <color rgba="0.8 0.8 0.8 1.0"/>
+</material>
+<material name="blue">
+  <color rgba="0.0 0.0 1.0 1.0"/>
+</material>
+
 <mujoco>
   <compiler discardvisual="false" meshdir="../meshes"/> 
 </mujoco>
@@ -8,8 +15,6 @@
 <xacro:include filename="$(find p73_walker_description)/urdf/materials.xacro" />
 <xacro:include filename="$(find p73_walker_description)/urdf/p73_walker.trans" />
 <xacro:include filename="$(find p73_walker_description)/urdf/p73_walker.gazebo" />
-
-<link name="world"/>
 
 <link name="base_link">
   <inertial>
@@ -304,12 +309,6 @@
     </geometry>
   </collision>
 </link>
-
-<joint name="world_to_base" type="floating">
-  <parent link="world"/>
-  <child link="base_link"/>
-  <origin xyz="0 0 0" rpy="0 0 0"/>
-</joint>
 
 <joint name="WaistYaw_Joint" type="revolute">
   <origin xyz="0.0 0.0 0.0955" rpy="0 0 0"/>
