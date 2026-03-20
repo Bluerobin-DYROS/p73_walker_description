@@ -25,14 +25,14 @@
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://p73_walker_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="../meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://p73_walker_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="../meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -46,14 +46,14 @@
   <visual>
     <origin xyz="0.0 -0.0 -0.0955" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://p73_walker_description/meshes/WaistYaw_Link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="../meshes/WaistYaw_Link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.0 -0.0 -0.0955" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://p73_walker_description/meshes/WaistYaw_Link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="../meshes/WaistYaw_Link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -67,14 +67,14 @@
   <visual>
     <origin xyz="-0.0155 0.0 -0.0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://p73_walker_description/meshes/R_HipRoll_Link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="../meshes/R_HipRoll_Link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.0155 0.0 -0.0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://p73_walker_description/meshes/R_HipRoll_Link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="../meshes/R_HipRoll_Link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -88,14 +88,14 @@
   <visual>
     <origin xyz="0.0155 -0.0 -0.0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://p73_walker_description/meshes/L_HipRoll_Link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="../meshes/L_HipRoll_Link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.0155 -0.0 -0.0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://p73_walker_description/meshes/L_HipRoll_Link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="../meshes/L_HipRoll_Link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -109,14 +109,14 @@
   <visual>
     <origin xyz="0.0 0.0805 -0.0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://p73_walker_description/meshes/R_HipPitch_Link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="../meshes/R_HipPitch_Link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.0 0.0805 -0.0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://p73_walker_description/meshes/R_HipPitch_Link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="../meshes/R_HipPitch_Link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -130,14 +130,14 @@
   <visual>
     <origin xyz="0.0 -0.0805 -0.0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://p73_walker_description/meshes/L_HipPitch_Link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="../meshes/L_HipPitch_Link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.0 -0.0805 -0.0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://p73_walker_description/meshes/L_HipPitch_Link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="../meshes/L_HipPitch_Link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -151,14 +151,14 @@
   <visual>
     <origin xyz="0.0 0.1205 0.202" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://p73_walker_description/meshes/R_Thigh_Link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="../meshes/R_Thigh_Link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.0 0.1205 0.202" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://p73_walker_description/meshes/R_Thigh_Link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="../meshes/R_Thigh_Link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -172,14 +172,14 @@
   <visual>
     <origin xyz="0.0 -0.1205 0.202" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://p73_walker_description/meshes/L_Thigh_Link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="../meshes/L_Thigh_Link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.0 -0.1205 0.202" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://p73_walker_description/meshes/L_Thigh_Link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="../meshes/L_Thigh_Link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -193,14 +193,14 @@
   <visual>
     <origin xyz="0.042753 0.101 0.400462" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://p73_walker_description/meshes/R_Knee_Link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="../meshes/R_Knee_Link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.042753 0.101 0.400462" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://p73_walker_description/meshes/R_Knee_Link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="../meshes/R_Knee_Link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -214,14 +214,14 @@
   <visual>
     <origin xyz="0.042753 -0.101 0.400462" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://p73_walker_description/meshes/L_Knee_Link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="../meshes/L_Knee_Link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.042753 -0.101 0.400462" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://p73_walker_description/meshes/L_Knee_Link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="../meshes/L_Knee_Link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -235,14 +235,14 @@
   <visual>
     <origin xyz="-0.000889 -0.0985 0.816317" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://p73_walker_description/meshes/L_AnkleRoll_Link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="../meshes/L_AnkleRoll_Link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.000889 -0.0985 0.816317" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://p73_walker_description/meshes/L_AnkleRoll_Link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="../meshes/L_AnkleRoll_Link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -256,14 +256,14 @@
   <visual>
     <origin xyz="-0.000889 0.0985 0.816317" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://p73_walker_description/meshes/R_AnkleRoll_Link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="../meshes/R_AnkleRoll_Link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.000889 0.0985 0.816317" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://p73_walker_description/meshes/R_AnkleRoll_Link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="../meshes/R_AnkleRoll_Link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -277,14 +277,14 @@
   <visual>
     <origin xyz="-0.011889 -0.122 0.816317" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://p73_walker_description/meshes/L_Foot_Link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="../meshes/L_Foot_Link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.011889 -0.122 0.816317" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://p73_walker_description/meshes/L_Foot_Link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="../meshes/L_Foot_Link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -298,14 +298,14 @@
   <visual>
     <origin xyz="-0.011889 0.122 0.816317" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://p73_walker_description/meshes/R_Foot_Link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="../meshes/R_Foot_Link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.011889 0.122 0.816317" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://p73_walker_description/meshes/R_Foot_Link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="../meshes/R_Foot_Link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -330,24 +330,24 @@
   <origin xyz="-0.0155 0.0 0.0" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="L_HipRoll_Link"/>
-  <axis xyz="1.0 -0.0 0.0"/>
-  <limit lower="-0.58" upper="0.3" velocity="10" effort="352.0"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+  <limit lower="-0.3" upper="0.58" velocity="10" effort="352.0"/>
 </joint>
 
 <joint name="R_HipPitch_Joint" type="revolute">
   <origin xyz="-0.0155 -0.0805 0.0" rpy="0 0 0"/>
   <parent link="R_HipRoll_Link"/>
   <child link="R_HipPitch_Link"/>
-  <axis xyz="-0.0 -1.0 -0.0"/>
-  <limit lower="-1.57" upper="2.09" velocity="10" effort="220.0"/>
+  <axis xyz="-0.0 1.0 -0.0"/>
+  <limit lower="-2.09" upper="1.57" velocity="10" effort="220.0"/>
 </joint>
 
 <joint name="L_HipPitch_Joint" type="revolute">
   <origin xyz="0.0155 0.0805 0.0" rpy="0 0 0"/>
   <parent link="L_HipRoll_Link"/>
   <child link="L_HipPitch_Link"/>
-  <axis xyz="-0.0 1.0 -0.0"/>
-  <limit lower="-2.09" upper="1.57" velocity="10" effort="220.0"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
+  <limit lower="-1.57" upper="2.09" velocity="10" effort="220.0"/>
 </joint>
 
 <joint name="R_HipYaw_Joint" type="revolute">
@@ -378,24 +378,24 @@
   <origin xyz="-0.042753 -0.0195 -0.198462" rpy="0 0 0"/>
   <parent link="L_Thigh_Link"/>
   <child link="L_Knee_Link"/>
-  <axis xyz="0.0 -1.0 -0.0"/>
-  <limit lower="-2.56" upper="0" velocity="10" effort="95"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+  <limit lower="0" upper="2.56" velocity="10" effort="95"/>
 </joint>
 
 <joint name="L_AnklePitch_Joint" type="revolute">
   <origin xyz="0.043642 -0.0025 -0.415855" rpy="0 0 0"/>
   <parent link="L_Knee_Link"/>
   <child link="L_AnkleRoll_Link"/>
-  <axis xyz="0.0 -1.0 -0.0"/>
-  <limit lower="-0.7" upper="1.05" velocity="10" effort="95"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+  <limit lower="-1.05" upper="0.7" velocity="10" effort="95"/>
 </joint>
 
 <joint name="R_AnklePitch_Joint" type="revolute">
   <origin xyz="0.043642 0.0025 -0.415855" rpy="0 0 0"/>
   <parent link="R_Knee_Link"/>
   <child link="R_AnkleRoll_Link"/>
-  <axis xyz="0.0 1.0 -0.0"/>
-  <limit lower="-1.05" upper="0.7" velocity="10" effort="95"/>
+  <axis xyz="0.0 -1.0 -0.0"/>
+  <limit lower="-0.7" upper="1.05" velocity="10" effort="95"/>
 </joint>
 
 <joint name="L_AnkleRoll_Joint" type="revolute">
