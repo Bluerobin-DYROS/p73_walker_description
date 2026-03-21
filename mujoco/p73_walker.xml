@@ -1,5 +1,6 @@
 <mujoco model="p73_walker">
   <compiler angle="radian" meshdir="../meshes/"/>
+  <option timestep='0.001' iterations="50" tolerance="1e-5" solver="Newton" jacobian="dense" cone="elliptic" noslip_iterations="30" noslip_tolerance="1e-5"/>
 
   <default>
     <default class="waist_yaw_motor">
@@ -60,8 +61,8 @@
     <light directional="true" diffuse=".5 .5 .5" pos="10 0 0" dir="-10 0 0"/>
 
     <body name="base_link">
+      <joint name="world_to_base" type="free" limited="false" actuatorfrclimited="false"  frictionloss="0" damping="0" stiffness="0" armature="0"/>
       <inertial pos="0.00118423 8.43237e-05 0.0218623" quat="0.520509 0.476955 0.480298 0.520479" mass="5.47506" diaginertia="0.0323962 0.0262879 0.0208649"/>
-      <joint name="world_to_base" type="free" limited="false" actuatorfrclimited="false" />
       <geom type="mesh" contype="0" conaffinity="0" density="0" mesh="base_link" material="blue" group="1"/>
       <geom class="cls" size="0.065 0.105" quat="0.707107 0 0.707107 0" pos="0.0 0.0 0.0" type="cylinder" />
       <site name="imu" type="cylinder" size="0.005 0.005" pos="-0.08 0.0 0.0725" group="4" rgba=".1 .9 .1 1"/>
@@ -76,7 +77,6 @@
           <joint name="L_HipPitch_Joint" class="hip_pitch_motor" pos="0 0 0" axis="0 -1 0" range="-1.57 2.09" actuatorfrcrange="-220 220"/>
           <geom pos="0 -0.0805 0" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="L_HipPitch_Link" material="silver"/>
           <geom class="cls" size="0.1 0.055 0.13" pos="0.015 0.0425 -0.06" type="box" />
-          <!-- <geom class="cls" size="0.1 0.015 0.045" pos="0.015 -0.0075 -0.145" type="box" /> -->
           <body name="L_Thigh_Link" pos="0 0.04 -0.202">
             <inertial pos="0.00687715 -0.00249606 -0.0919431" quat="0.693505 0.0874998 0.0786175 0.710784" mass="4.90328" diaginertia="0.040768 0.0370279 0.0240011"/>
             <joint name="L_HipYaw_Joint" class="hip_yaw_motor" pos="0 0 0" axis="0 0 -1" range="-0.78 0.78" actuatorfrcrange="-220 220"/>
@@ -146,7 +146,7 @@
 
       <body name="WaistYaw_Link" pos="0 0 0.0955">
         <inertial pos="-0.00225139 0.000202761 0.243933" quat="0.999949 -0.000255431 -0.00677998 -0.00747803" mass="7.60539" diaginertia="0.205795 0.194814 0.0547032"/>
-        <joint name="WaistYaw_Joint" pos="0 0 0" axis="0 0 1" range="-1.57 1.57" actuatorfrcrange="-152 152"/>
+        <joint name="WaistYaw_Joint" class="waist_yaw_motor" pos="0 0 0" axis="0 0 1" range="-1.57 1.57" actuatorfrcrange="-152 152"/>
         <geom pos="0 0 -0.0955" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="WaistYaw_Link" material="silver"/>
         <geom class="cls" size="0.065 0.02" quat="1 0 0 0" pos="0.0 -0.0 0.0385" type="cylinder" />
         <geom class="cls" size="0.13 0.15 0.20" pos="0.005 -0.0 0.28" type="box" />
@@ -157,20 +157,19 @@
   </worldbody>
 
   <actuator>
-    <motor name="WaistYaw_motor"     joint="WaistYaw_Joint"     gear="80" ctrllimited="true" ctrlrange="-152 152"/>
-
-    <motor name="R_HipRoll_motor"    joint="R_HipRoll_Joint"    gear="80" ctrllimited="true" ctrlrange="-352 352"/>
-    <motor name="R_HipPitch_motor"   joint="R_HipPitch_Joint"   gear="50" ctrllimited="true" ctrlrange="-220 220"/>
-    <motor name="R_HipYaw_motor"     joint="R_HipYaw_Joint"     gear="50" ctrllimited="true" ctrlrange="-220 220"/>
-    <motor name="R_Knee_motor"       joint="R_Knee_Joint"       gear="50" ctrllimited="true" ctrlrange="-95 95"/>
-    <motor name="R_AnklePitch_motor" joint="R_AnklePitch_Joint" gear="50" ctrllimited="true" ctrlrange="-95 95"/>
-    <motor name="R_AnkleRoll_motor"  joint="R_AnkleRoll_Joint"  gear="50" ctrllimited="true" ctrlrange="-95 95"/>
-    <motor name="L_HipRoll_motor"    joint="L_HipRoll_Joint"    gear="80" ctrllimited="true" ctrlrange="-352 352"/>
-    <motor name="L_HipPitch_motor"   joint="L_HipPitch_Joint"   gear="50" ctrllimited="true" ctrlrange="-220 220"/>
-    <motor name="L_HipYaw_motor"     joint="L_HipYaw_Joint"     gear="50" ctrllimited="true" ctrlrange="-220 220"/>
-    <motor name="L_Knee_motor"       joint="L_Knee_Joint"       gear="50" ctrllimited="true" ctrlrange="-95 95"/>
-    <motor name="L_AnklePitch_motor" joint="L_AnklePitch_Joint" gear="50" ctrllimited="true" ctrlrange="-95 95"/>
-    <motor name="L_AnkleRoll_motor"  joint="L_AnkleRoll_Joint"  gear="50" ctrllimited="true" ctrlrange="-95 95"/>
+    <motor name="L_HipRoll_motor"    joint="L_HipRoll_Joint"    ctrllimited="true" ctrlrange="-352 352"/>
+    <motor name="L_HipPitch_motor"   joint="L_HipPitch_Joint"   ctrllimited="true" ctrlrange="-220 220"/>
+    <motor name="L_HipYaw_motor"     joint="L_HipYaw_Joint"     ctrllimited="true" ctrlrange="-220 220"/>
+    <motor name="L_Knee_motor"       joint="L_Knee_Joint"       ctrllimited="true" ctrlrange="-95 95"/>
+    <motor name="L_AnklePitch_motor" joint="L_AnklePitch_Joint" ctrllimited="true" ctrlrange="-95 95"/>
+    <motor name="L_AnkleRoll_motor"  joint="L_AnkleRoll_Joint"  ctrllimited="true" ctrlrange="-95 95"/>
+    <motor name="R_HipRoll_motor"    joint="R_HipRoll_Joint"    ctrllimited="true" ctrlrange="-352 352"/>
+    <motor name="R_HipPitch_motor"   joint="R_HipPitch_Joint"   ctrllimited="true" ctrlrange="-220 220"/>
+    <motor name="R_HipYaw_motor"     joint="R_HipYaw_Joint"     ctrllimited="true" ctrlrange="-220 220"/>
+    <motor name="R_Knee_motor"       joint="R_Knee_Joint"       ctrllimited="true" ctrlrange="-95 95"/>
+    <motor name="R_AnklePitch_motor" joint="R_AnklePitch_Joint" ctrllimited="true" ctrlrange="-95 95"/>
+    <motor name="R_AnkleRoll_motor"  joint="R_AnkleRoll_Joint"  ctrllimited="true" ctrlrange="-95 95"/>
+    <motor name="WaistYaw_motor"     joint="WaistYaw_Joint"     ctrllimited="true" ctrlrange="-152 152"/>
   </actuator>
 
   <sensor>
@@ -181,7 +180,7 @@
 
 <keyframe>
   <key name="stand"
-       qpos="0 0 0.89 1 0 0 0
+       qpos="0 0 0.86 1 0 0 0
              0.0  0.36 0.0  0.77 -0.41 0.0
              0.0 -0.36 0.0 -0.77  0.41 0.0
              0.0"/>

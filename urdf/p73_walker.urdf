@@ -30,9 +30,9 @@
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <origin xyz="0 0 0" rpy="0 1.5708 0"/>
     <geometry>
-      <mesh filename="../meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <cylinder radius="0.065" length="0.21"/>
     </geometry>
   </collision>
 </link>
@@ -51,9 +51,15 @@
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.0 -0.0 -0.0955" rpy="0 0 0"/>
+    <origin xyz="0.0 0.0 0.0385" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../meshes/WaistYaw_Link.stl" scale="0.001 0.001 0.001"/>
+      <cylinder radius="0.065" length="0.04"/>
+    </geometry>
+  </collision>
+  <collision>
+    <origin xyz="0.005 0.0 0.28" rpy="0 0 0"/>
+    <geometry>
+      <box size="0.26 0.3 0.4"/>
     </geometry>
   </collision>
 </link>
@@ -114,9 +120,9 @@
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.0 0.0805 -0.0" rpy="0 0 0"/>
+    <origin xyz="0.015 -0.0425 -0.06" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../meshes/R_HipPitch_Link.stl" scale="0.001 0.001 0.001"/>
+      <box size="0.2 0.11 0.26"/>
     </geometry>
   </collision>
 </link>
@@ -135,9 +141,9 @@
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.0 -0.0805 -0.0" rpy="0 0 0"/>
+    <origin xyz="0.015 0.0425 -0.06" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../meshes/L_HipPitch_Link.stl" scale="0.001 0.001 0.001"/>
+      <box size="0.2 0.11 0.26"/>
     </geometry>
   </collision>
 </link>
@@ -156,9 +162,9 @@
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.0 0.1205 0.202" rpy="0 0 0"/>
+    <origin xyz="0.02 0.0 -0.09" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../meshes/R_Thigh_Link.stl" scale="0.001 0.001 0.001"/>
+      <box size="0.2 0.14 0.16"/>
     </geometry>
   </collision>
 </link>
@@ -177,9 +183,9 @@
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.0 -0.1205 0.202" rpy="0 0 0"/>
+    <origin xyz="0.02 0.0 -0.09" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../meshes/L_Thigh_Link.stl" scale="0.001 0.001 0.001"/>
+      <box size="0.2 0.14 0.16"/>
     </geometry>
   </collision>
 </link>
@@ -198,9 +204,15 @@
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.042753 0.101 0.400462" rpy="0 0 0"/>
+    <origin xyz="0.055 -0.02 -0.12" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../meshes/R_Knee_Link.stl" scale="0.001 0.001 0.001"/>
+      <box size="0.12 0.12 0.24"/>
+    </geometry>
+  </collision>
+  <collision>
+    <origin xyz="0.045 -0.02 -0.32" rpy="0 0 0"/>
+    <geometry>
+      <box size="0.09 0.08 0.16"/>
     </geometry>
   </collision>
 </link>
@@ -219,9 +231,15 @@
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.042753 -0.101 0.400462" rpy="0 0 0"/>
+    <origin xyz="0.055 0.02 -0.12" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../meshes/L_Knee_Link.stl" scale="0.001 0.001 0.001"/>
+      <box size="0.12 0.12 0.24"/>
+    </geometry>
+  </collision>
+  <collision>
+    <origin xyz="0.045 0.02 -0.32" rpy="0 0 0"/>
+    <geometry>
+      <box size="0.09 0.08 0.16"/>
     </geometry>
   </collision>
 </link>
@@ -282,9 +300,15 @@
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.011889 -0.122 0.816317" rpy="0 0 0"/>
+    <origin xyz="0.1 0.0 -0.067" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../meshes/L_Foot_Link.stl" scale="0.001 0.001 0.001"/>
+      <box size="0.2 0.1 0.02"/>
+    </geometry>
+  </collision>
+  <collision>
+    <origin xyz="-0.03 0.0 -0.067" rpy="0 0 0"/>
+    <geometry>
+      <box size="0.06 0.1 0.02"/>
     </geometry>
   </collision>
 </link>
@@ -303,9 +327,15 @@
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.011889 0.122 0.816317" rpy="0 0 0"/>
+    <origin xyz="0.1 0.0 -0.067" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../meshes/R_Foot_Link.stl" scale="0.001 0.001 0.001"/>
+      <box size="0.2 0.1 0.02"/>
+    </geometry>
+  </collision>
+  <collision>
+    <origin xyz="-0.03 0.0 -0.067" rpy="0 0 0"/>
+    <geometry>
+      <box size="0.06 0.1 0.02"/>
     </geometry>
   </collision>
 </link>
