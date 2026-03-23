@@ -69,7 +69,7 @@
 
       <body name="L_HipRoll_Link" pos="-0.0155 0 0">
         <inertial pos="0.0124197 0.0490939 -0.000127375" quat="0.713726 0.69689 -0.0416249 -0.0566259" mass="1.27027" diaginertia="0.00206605 0.00180727 0.00123469"/>
-        <joint name="L_HipRoll_Joint" class="hip_roll_motor" pos="0 0 0" axis="-1 0 0" range="-0.3 0.58" actuatorfrcrange="-352 352"/>
+        <joint name="L_HipRoll_Joint" class="hip_roll_motor" pos="0 0 0" axis="1 0 0" range="-0.58 0.3" actuatorfrcrange="-352 352"/>
         <geom pos="0.0155 0 0" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="L_HipRoll_Link" material="silver"/>
         <geom pos="0.0155 0 0" quat="1 0 0 0" type="mesh" mesh="L_HipRoll_Link" rgba="0.8 0.8 0.8 1"/>
         <body name="L_HipPitch_Link" pos="0.0155 0.0805 0">
@@ -108,7 +108,7 @@
 
       <body name="R_HipRoll_Link" pos="0.0155 0 0">
         <inertial pos="-0.0138626 -0.045575 -0.000138455" quat="0.695083 0.713545 -0.0610603 -0.0631207" mass="1.17879" diaginertia="0.00200213 0.00174939 0.00114848"/>
-        <joint name="R_HipRoll_Joint" class="hip_roll_motor" pos="0 0 0" axis="1 0 0" range="-0.3 0.58" actuatorfrcrange="-352 352"/>
+        <joint name="R_HipRoll_Joint" class="hip_roll_motor" pos="0 0 0" axis="-1 0 0" range="-0.58 0.3" actuatorfrcrange="-352 352"/>
         <geom pos="-0.0155 0 0" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="R_HipRoll_Link" material="silver"/>
         <body name="R_HipPitch_Link" pos="-0.0155 -0.0805 0">
           <inertial pos="0.00471264 -0.0463621 -0.067288" quat="0.713394 0.0214462 -0.0352894 0.699545" mass="6.85746" diaginertia="0.064219 0.0569434 0.0279425"/>
