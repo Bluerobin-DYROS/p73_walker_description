@@ -23,10 +23,10 @@ p73_controller:
                  100.0]
           tau_coulomb: [5.0, 5.0, 2.0, 3.0, 2.0, 2.0,  # Right Hip Roll, Left Hip Roll, Left Hip Pitch make eeire noises.
                         5.0, 4.0, 2.0, 4.0, 2.0, 2.0,
-                        0.0]
+                        12.0]
           tau_viscous: [2.5, 2.5, 1.0, 1.5, 1.0, 1.0,
                         2.5, 2.0, 1.0, 2.0, 1.0, 1.0,
-                        0.0]
+                        6.0]
           motor_armature: [0.96, 0.375, 0.0625, 0.375, 0.0625, 0.0625, # Motor inertia * gear ratio^2 (Hip roll 80:1, the rest 50:1)
                            0.96, 0.375, 0.0625, 0.375, 0.0625, 0.0625,
                            0.16]
