@@ -385,7 +385,7 @@
   <parent link="R_HipPitch_Link"/>
   <child link="R_Thigh_Link"/>
   <axis xyz="0.0 0.0 -1.0"/>
-  <limit lower="-0.78" upper="0.78" velocity="10" effort="220.0"/>
+  <limit lower="-0.78" upper="0.78" velocity="10" effort="95.0"/>
 </joint>
 
 <joint name="L_HipYaw_Joint" type="revolute">
@@ -393,7 +393,7 @@
   <parent link="L_HipPitch_Link"/>
   <child link="L_Thigh_Link"/>
   <axis xyz="0.0 -0.0 -1.0"/>
-  <limit lower="-0.78" upper="0.78" velocity="10" effort="220.0"/>
+  <limit lower="-0.78" upper="0.78" velocity="10" effort="95.0"/>
 </joint>
 
 <joint name="R_Knee_Joint" type="revolute">
@@ -401,7 +401,7 @@
   <parent link="R_Thigh_Link"/>
   <child link="R_Knee_Link"/>
   <axis xyz="0.0 -1.0 0.0"/>
-  <limit lower="-2.56" upper="0" velocity="10" effort="95"/>
+  <limit lower="-2.56" upper="0" velocity="10" effort="220"/>
 </joint>
 
 <joint name="L_Knee_Joint" type="revolute">
@@ -409,7 +409,7 @@
   <parent link="L_Thigh_Link"/>
   <child link="L_Knee_Link"/>
   <axis xyz="0.0 1.0 -0.0"/>
-  <limit lower="0" upper="2.56" velocity="10" effort="95"/>
+  <limit lower="0" upper="2.56" velocity="10" effort="220"/>
 </joint>
 
 <joint name="L_AnklePitch_Joint" type="revolute">

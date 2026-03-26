@@ -159,14 +159,14 @@
   <actuator>
     <motor name="L_HipRoll_motor"    joint="L_HipRoll_Joint"    ctrllimited="true" ctrlrange="-352 352"/>
     <motor name="L_HipPitch_motor"   joint="L_HipPitch_Joint"   ctrllimited="true" ctrlrange="-220 220"/>
-    <motor name="L_HipYaw_motor"     joint="L_HipYaw_Joint"     ctrllimited="true" ctrlrange="-220 220"/>
-    <motor name="L_Knee_motor"       joint="L_Knee_Joint"       ctrllimited="true" ctrlrange="-95 95"/>
+    <motor name="L_HipYaw_motor"     joint="L_HipYaw_Joint"     ctrllimited="true" ctrlrange="-95 95"/>
+    <motor name="L_Knee_motor"       joint="L_Knee_Joint"       ctrllimited="true" ctrlrange="-220 220"/>
     <motor name="L_AnklePitch_motor" joint="L_AnklePitch_Joint" ctrllimited="true" ctrlrange="-95 95"/>
     <motor name="L_AnkleRoll_motor"  joint="L_AnkleRoll_Joint"  ctrllimited="true" ctrlrange="-95 95"/>
     <motor name="R_HipRoll_motor"    joint="R_HipRoll_Joint"    ctrllimited="true" ctrlrange="-352 352"/>
     <motor name="R_HipPitch_motor"   joint="R_HipPitch_Joint"   ctrllimited="true" ctrlrange="-220 220"/>
-    <motor name="R_HipYaw_motor"     joint="R_HipYaw_Joint"     ctrllimited="true" ctrlrange="-220 220"/>
-    <motor name="R_Knee_motor"       joint="R_Knee_Joint"       ctrllimited="true" ctrlrange="-95 95"/>
+    <motor name="R_HipYaw_motor"     joint="R_HipYaw_Joint"     ctrllimited="true" ctrlrange="-95 95"/>
+    <motor name="R_Knee_motor"       joint="R_Knee_Joint"       ctrllimited="true" ctrlrange="-220 220"/>
     <motor name="R_AnklePitch_motor" joint="R_AnklePitch_Joint" ctrllimited="true" ctrlrange="-95 95"/>
     <motor name="R_AnkleRoll_motor"  joint="R_AnkleRoll_Joint"  ctrllimited="true" ctrlrange="-95 95"/>
     <motor name="WaistYaw_motor"     joint="WaistYaw_Joint"     ctrllimited="true" ctrlrange="-152 152"/>
