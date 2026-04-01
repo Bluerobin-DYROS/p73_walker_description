@@ -16,13 +16,13 @@
       <joint damping="1.0" armature="0.0625" frictionloss="2.0"/>
     </default>
     <default class="knee_pitch_motor">
-      <joint damping="2.0" armature="0.46722" frictionloss="3.0"/>
+      <joint damping="2.0" armature="0.35630" frictionloss="3.0"/>
     </default>
     <default class="ankle_pitch_motor">
-      <joint damping="1.0" armature="0.13629" frictionloss="2.0"/>
+      <joint damping="1.0" armature="0.12886" frictionloss="2.0"/>
     </default>
     <default class="ankle_roll_motor">
-      <joint damping="1.0" armature="0.13614" frictionloss="2.0"/>
+      <joint damping="1.0" armature="0.12883" frictionloss="2.0"/>
     </default>
     <default class="viz">
       <geom contype="0" conaffinity="0" group="1" type="mesh" rgba="1.0 1.0 1.0 1" />
